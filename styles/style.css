@@ -27,6 +27,7 @@
   font-family: "Montserrat Bold";
   src: url(../../fonts/static/Montserrat-Bold.ttf);
 }
+<<<<<<< HEAD
 a:hover {
   text-decoration: none;
   cursor: pointer;
@@ -34,6 +35,8 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+=======
+>>>>>>> 95ee585abe17ed26301808ffbcc59572d959d8d8
 header {
   width: 100%;
   height: 100px;
