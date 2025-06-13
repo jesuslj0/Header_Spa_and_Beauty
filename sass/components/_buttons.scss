@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as v;
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    filter: brightness(1.2);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,16 +1,17 @@
-@import "grid";
-@import "footer";
-@import "forms";
-@import "navbar";
-@import "sidebar";
-@import "header";
+@use "grid";
+@use "footer";
+@use "forms";
+@use "navbar";
+@use "sidebar";
+@use "header";
+@use "../abstracts/variables" as v;
 
 body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "Poppins Regular";
-    background-color: $white-pink;
+    background-color: v.$white-pink;
 }
 
 .page {
@@ -28,13 +29,13 @@ body {
     flex-direction: column;
     padding: 100px 160px 200px 160px;
     width: auto;
-    background-image: linear-gradient(to right, $white-pink 0%, $white-pink 65%, $light-blue 65%);
+    background-image: linear-gradient(to right, v.$white-pink 0%, v.$white-pink 65%, v.$light-blue 65%);
 
     h1 {
         width: 800px;
         height: auto;
         font-size: 64px;
-        color: $dark-blue;
+        color: v.$dark-blue;
 
         &::after {
             content: url(../../img/hero-spa.png);
@@ -45,7 +46,7 @@ body {
     }
 
     p {
-        color: $light-grey;
+        color: v.$light-grey;
         width: 760px;
         font-size: 24px;
         margin-top: 20px;
@@ -66,13 +67,13 @@ body {
 
         ul li:nth-of-type(1) a {
             padding: 16px 40px;
-            color: $white-1;
-            background-color: $dark-blue;
+            color: v.$white-1;
+            background-color: v.$dark-blue;
             border-radius: 32px;
         }
     
         ul li:nth-of-type(2) a {
-            color: $dark-blue;
+            color: v.$dark-blue;
             position: relative;
     
             &:before {
@@ -98,7 +99,7 @@ body {
     gap: 72px;
     width: 643px;
     height: auto;
-    background-color: $white-1;
+    background-color: v.$white-1;
     margin: 0px 160px;
     padding: 32px;
     position: absolute;
@@ -116,7 +117,7 @@ body {
         }
 
         span {
-            color: $dark-blue;
+            color: v.$dark-blue;
             font-weight: 500;
             font-size: 36px;
         }
@@ -146,7 +147,7 @@ body {
         flex-direction: column;
         gap: 8px;
         align-items: start;
-        background-color: $white-transparent;
+        background-color: v.$white-transparent;
         backdrop-filter: blur(4px);
         border-radius: 16px;
         padding: 24px;
@@ -158,7 +159,7 @@ body {
         }
 
         span {
-            color: $dark-blue;
+            color: v.$dark-blue;
             font-weight: bold;
         }
     }
